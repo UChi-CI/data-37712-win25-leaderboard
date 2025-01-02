@@ -49,12 +49,6 @@ if not GITHUB_USERNAME or not GITHUB_TOKEN:
         "GitHub username and token must be provided via .env or arguments."
     )
 
-# argparsing for github token
-parser = argparse.ArgumentParser()
-parser.add_argument("--username", help="GitHub username")
-parser.add_argument("--token", help="Access token for that GitHub username")
-args = parser.parse_args()
-
 # Write leaderboards to disk in current directory.
 
 print(f"Using GitHub username: {GITHUB_USERNAME}")
