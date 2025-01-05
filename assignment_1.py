@@ -127,9 +127,9 @@ def compute_scores(file_name, pred, repo):
 
     try:
         if dataset == "newsgroups":
-            accuracy = accuracy_score(true["newsgroup"], pred["newsgroup"]).round(5)
+            accuracy = round(accuracy_score(true["newsgroup"], pred["newsgroup"]), 5)
         elif dataset == "sst2":
-            accuracy = accuracy_score(true["label"], pred["label"]).round(5)
+            accuracy = round(accuracy_score(true["label"], pred["label"]), 5)
 
     except:
         accuracy = None
