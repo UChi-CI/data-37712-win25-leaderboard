@@ -49,7 +49,7 @@ def main(config_path="config.yaml"):
     CLASS = config["github"]["organization"]
     LEADERBOARD_REPO_NAME = config["github"]["leaderboard_repo"]
     REPO_ASSIGNMENT_PREFIX = config["github"]["assignment_prefix"]
-    LEADERBOARD_ASSIGNMENT_NAME = config["github"]["assignment_name"]
+    LEADERBOARD_ASSIGNMENT_NAME = config["github"]["assignment_name"] + "-leaderboard"
     STAFF = set(config["staff"])
     TEST_DATA_DIR = Path(config["test_data"]["directory"])
     ASSIGNMENT_TEST_DATA_DIR = (
@@ -138,8 +138,8 @@ def main(config_path="config.yaml"):
         csv_name = name + ".csv"
 
         if DRY_RUN:
-            Path("public").mkdir(exist_ok=True)
-            with open(f"public/{csv_name}", "w") as f:
+            Path("dry_run").mkdir(exist_ok=True)
+            with open(f"dry_run/{csv_name}", "w") as f:
                 f.write(csv_content)
         else:
             try:
