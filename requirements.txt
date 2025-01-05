@@ -2,3 +2,5 @@ PyGithub
 ipython
 tqdm
 scikit-learn
+pyyaml
+python-dotenv
