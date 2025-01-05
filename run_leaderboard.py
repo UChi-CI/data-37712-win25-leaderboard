@@ -14,14 +14,14 @@ from tqdm import tqdm
 SCRIPT_DIR = Path(__file__).resolve().parent
 
 
-def get_assignment_utils(utils_module):
-    """Factory function to import scoring and data utilities based on the config file.
+def get_assignment_utils(utils_module: str):
+    """Factory function to import scoring and data utilities. These will be unique for each assignment.
 
     Inputs:
-        config_path (str): Path to the YAML configuration file.
+        utils_module: The name of the module containing the scoring and data utilities.
 
     Returns:
-        dict: A dictionary containing `compute_scores`, `sort_scores`, and `load_test_data`.
+        dict: A dictionary containing `compute_scores`, `sort_scores`, and `load_test_data` functions.
     """
     module = importlib.import_module(utils_module)
 
@@ -42,11 +42,10 @@ def main(config_path="config.yaml"):
     GITHUB_USERNAME = os.getenv("GITHUB_USERNAME")
     GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")
 
-    # Load YAML configuration
+    # Load YAML configuration and extract values
     with open(config_path, "r") as config_file:
         config = yaml.safe_load(config_file)
 
-    # Extract configuration values
     DRY_RUN = config["dry_run"]
     CLASS = config["github"]["organization"]
     LEADERBOARD_REPO_NAME = config["github"]["leaderboard_repo"]
@@ -67,7 +66,7 @@ def main(config_path="config.yaml"):
     sort_scores = utils["sort_scores"]
     load_test_data = utils["load_test_data"]
 
-    # Validate GitHub credentials
+    # Auth with GitHub and load leaderboard repo
     if not GITHUB_USERNAME or not GITHUB_TOKEN:
         raise ValueError(
             "GitHub username and token must be provided via .env or YAML config."
