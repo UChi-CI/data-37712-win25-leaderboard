@@ -11,6 +11,8 @@ from dotenv import load_dotenv
 from github import Github, GithubException
 from tqdm import tqdm
 
+SCRIPT_DIR = Path(__file__).resolve().parent
+
 
 def get_assignment_utils(utils_module):
     """Factory function to import scoring and data utilities based on the config file.
@@ -79,7 +81,7 @@ def main(config_path="config.yaml"):
     leaderboard_repo = org.get_repo(LEADERBOARD_REPO_NAME)
 
     print("Loading test data...")
-    test_data = load_test_data(ASSIGNMENT_TEST_DATA_DIR)
+    test_data = load_test_data(SCRIPT_DIR / ASSIGNMENT_TEST_DATA_DIR)
 
     print("Loading Repos...")
     repos = [
@@ -109,7 +111,7 @@ def main(config_path="config.yaml"):
         repo["files"] = {
             result_file.name: result_file
             for result_file in res_files
-            if result_file.name in RESULTS_FILES
+            if any(result_file.name.endswith(suffix) for suffix in RESULTS_FILES)
         }
 
     # Download and compute scores
@@ -170,7 +172,7 @@ def main(config_path="config.yaml"):
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Run leaderboard updater.")
+    parser = argparse.ArgumentParser(description="Run leaderboard update")
     parser.add_argument(
         "--config",
         type=str,
