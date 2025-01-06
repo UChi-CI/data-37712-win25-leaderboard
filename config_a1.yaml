@@ -14,7 +14,7 @@ utils_module: "assignment_1_utils"
 
 staff:
   # - toddnief
-  - ari-holtzman
+  # - ari-holtzman
 
 results_files:
   - mlp_newsgroups_test_predictions.csv

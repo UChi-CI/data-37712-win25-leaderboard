@@ -3,3 +3,4 @@
 held-out-test-data/*
 __pycache__/*
 logs/*
+*.code-workspace
