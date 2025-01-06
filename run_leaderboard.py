@@ -129,11 +129,14 @@ def main(config_path="config.yaml"):
             score = compute_scores(file_name, data, repo, test_data)
             if score:
                 leaderboards.append(score)
-
-    leaderboards = sort_scores(pd.DataFrame(leaderboards))
+    flat_leaderboards = [item for sublist in leaderboards for item in sublist]
+    sorted_leaderboards = sort_scores(pd.DataFrame(flat_leaderboards))
 
     print("Updating leaderboards...")
-    for name, board in leaderboards.groupby("leaderboard"):
+    for name, board in sorted_leaderboards.groupby("leaderboard"):
+        # Take the worst score for each member
+        board = board.loc[board.groupby(["Member", "Method"])["Score"].idxmin()]
+
         del board["leaderboard"]
         csv_content = board.to_csv(index=False)
         csv_name = name + ".csv"

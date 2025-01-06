@@ -48,13 +48,16 @@ def compute_scores(file_name, pred, repo, test_data):
         accuracy = None
         comment = "Error computing accuracy!"
 
-    return {
-        "leaderboard": "leaderboard_" + dataset,
-        "Score": accuracy,
-        "Method": method,
-        "Member": " ".join(repo["member"]),
-        "Comment": comment,
-    }
+    return [
+        {
+            "leaderboard": "leaderboard_" + dataset,
+            "Score": accuracy,
+            "Method": method,
+            "Member": member,
+            "Comment": comment,
+        }
+        for member in repo["member"]
+    ]
 
 
 def sort_scores(leaderboards):

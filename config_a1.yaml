@@ -12,7 +12,7 @@ test_data:
 
 utils_module: "assignment_1_utils"
 
-staff:
+staff: []
   # - toddnief
   # - ari-holtzman
 
