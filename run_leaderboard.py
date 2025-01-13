@@ -139,7 +139,7 @@ def main(config_path="config.yaml"):
     print("Updating leaderboards...")
     for name, board in sorted_leaderboards.groupby("leaderboard"):
         # Take the worst score for each member
-        board = board.dropna(subset=["Score"])
+        board["Score"] = board["Score"].fillna(-float("inf"))  # Fill NaN with -inf
         board = board.loc[board.groupby(["Member", "Method"])["Score"].idxmin()]
 
         del board["leaderboard"]
