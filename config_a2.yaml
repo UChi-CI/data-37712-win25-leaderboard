@@ -1,0 +1,22 @@
+dry_run: false
+
+github:
+  organization: "UChi-CI"
+  leaderboard_repo: "data-37712-win25-leaderboard"
+  assignment_prefix: "data-37712-win25-assignment-2-"
+  assignment_name: "assignment-2"
+
+test_data:
+  directory: "held-out-test-data"
+  assignment_test_data: "a2-test-data"
+
+utils_module: "assignment_2_utils"
+
+staff: []
+  # - toddnief
+  # - ari-holtzman
+
+results_files:
+  - character_n_gram_test_wer_predictions.csv
+  - subword_n_gram_test_wer_predictions.csv
+  - transformer_test_wer_predictions.csv

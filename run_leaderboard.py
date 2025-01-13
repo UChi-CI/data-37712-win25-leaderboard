@@ -2,6 +2,7 @@ import argparse
 import base64
 import importlib
 import os
+from datetime import datetime
 from io import StringIO
 from pathlib import Path
 
@@ -37,6 +38,9 @@ def get_assignment_utils(utils_module: str):
 
 
 def main(config_path="config.yaml"):
+    current_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    print(f"Starting leaderboard update... [Time: {current_time}]")
+
     # Load environment variables
     load_dotenv()
     GITHUB_USERNAME = os.getenv("GITHUB_USERNAME")
@@ -135,6 +139,7 @@ def main(config_path="config.yaml"):
     print("Updating leaderboards...")
     for name, board in sorted_leaderboards.groupby("leaderboard"):
         # Take the worst score for each member
+        board = board.dropna(subset=["Score"])
         board = board.loc[board.groupby(["Member", "Method"])["Score"].idxmin()]
 
         del board["leaderboard"]
