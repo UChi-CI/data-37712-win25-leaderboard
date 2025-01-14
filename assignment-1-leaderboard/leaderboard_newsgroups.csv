@@ -1,5 +1,6 @@
 Score,Method,Member,Comment
--inf,perceptron,6danni,Error computing accuracy!
+0.05258,mlp,6danni,
+0.60263,perceptron,6danni,
 0.05258,mlp,Angelneer926,
 0.75823,perceptron,Angelneer926,
 0.05258,mlp,Bri636,
@@ -32,9 +33,9 @@ Score,Method,Member,Comment
 0.05258,mlp,christymarc,
 0.72238,perceptron,christymarc,
 0.05258,mlp,dwlyu,
-0.70805,perceptron,dwlyu,
+0.77018,perceptron,dwlyu,
 0.05258,mlp,echeloni11,
-0.72225,perceptron,echeloni11,
+0.73208,perceptron,echeloni11,
 0.76965,perceptron,javyduck,
 0.05258,mlp,jiawei-zhang-a,
 0.05258,perceptron,jiawei-zhang-a,
