@@ -36,6 +36,8 @@ Score,Method,Member,Comment
 0.77018,perceptron,dwlyu,
 0.05258,mlp,echeloni11,
 0.73208,perceptron,echeloni11,
+0.05258,mlp,ericdesoiza,
+0.05258,perceptron,ericdesoiza,
 0.76965,perceptron,javyduck,
 0.05258,mlp,jiazheng-wang-yes,
 0.7103,perceptron,jiazheng-wang-yes,
@@ -48,7 +50,7 @@ Score,Method,Member,Comment
 0.05258,mlp,listar2000,
 0.6256,perceptron,listar2000,
 0.05258,mlp,nfrgeller,
--inf,perceptron,nfrgeller,Error computing accuracy!
+0.72053,perceptron,nfrgeller,
 0.05258,mlp,rachelngordon,
 0.38887,perceptron,rachelngordon,
 0.05258,mlp,redstonewhite,
