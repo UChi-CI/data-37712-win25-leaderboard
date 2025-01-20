@@ -109,6 +109,7 @@ def main(config_path="config.yaml"):
             res_files = repo["git"].get_contents("results")
         except Exception:
             print(f"Issue: results folder not found for {repo['name']}")
+            res_files = []
             continue
 
         repo["files"] = {
@@ -121,7 +122,16 @@ def main(config_path="config.yaml"):
     leaderboards = []
     for repo in tqdm(repos, desc="Downloading files"):
         repo["results"] = {}
-        if "files" not in repo:
+        # Add a placeholder for missing files
+        if not repo["files"]:
+            error_entry = {
+                "Member": ", ".join(repo["member"]) if repo["member"] else "Unknown",
+                "Method": "N/A",
+                "Score": -float("inf"),
+                "leaderboard": "default",
+                "Error": "Missing results files",
+            }
+            leaderboards.append([error_entry])
             continue
 
         for file_name, path in repo["files"].items():
