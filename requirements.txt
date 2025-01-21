@@ -4,3 +4,5 @@ tqdm
 scikit-learn
 pyyaml
 python-dotenv
+evaluate
+jiwer
