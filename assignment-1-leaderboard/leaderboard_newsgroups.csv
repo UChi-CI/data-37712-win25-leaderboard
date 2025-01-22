@@ -43,12 +43,12 @@ Score,Method,Member,Comment
 0.76965,perceptron,javyduck,
 0.56373,mlp,jiawei-zhang-a,
 0.7411,perceptron,jiawei-zhang-a,
--inf,mlp,jiazheng-wang-yes,Error computing accuracy!
+0.79687,mlp,jiazheng-wang-yes,
 0.7103,perceptron,jiazheng-wang-yes,
-0.39657,mlp,jiheeyy,
+0.54567,mlp,jiheeyy,
 0.59732,perceptron,jiheeyy,
--inf,mlp,jinoh5,Error computing accuracy!
--inf,perceptron,jinoh5,Error computing accuracy!
+0.05231,mlp,jinoh5,
+0.67446,perceptron,jinoh5,
 0.67844,mlp,kehanzhao1,
 0.72836,perceptron,kehanzhao1,
 0.42977,mlp,listar2000,
