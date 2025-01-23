@@ -16,8 +16,6 @@ staff: []
   # - toddnief
   # - ari-holtzman
 
+# Note: This is a more general way of specifying the results files, clean this up a bit
 results_files:
   - "test_wer_predictions.csv"
-  # - character_n_gram_test_wer_predictions.csv
-  # - subword_n_gram_test_wer_predictions.csv
-  # - transformer_test_wer_predictions.csv
