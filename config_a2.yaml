@@ -17,6 +17,7 @@ staff: []
   # - ari-holtzman
 
 results_files:
-  - character_n_gram_test_wer_predictions.csv
-  - subword_n_gram_test_wer_predictions.csv
-  - transformer_test_wer_predictions.csv
+  - "test_wer_predictions.csv"
+  # - character_n_gram_test_wer_predictions.csv
+  # - subword_n_gram_test_wer_predictions.csv
+  # - transformer_test_wer_predictions.csv

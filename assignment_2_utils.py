@@ -30,43 +30,87 @@ def load_test_data(assignment_test_data_dir):
 
 
 def compute_scores(file_name, pred, repo, test_data):
-    model_name = file_name.split("_test_wer_predictions.csv")[0]
+    # model_name = file_name.split("_test_wer_predictions.csv")[0]
 
-    if model_name not in ["character_n_gram", "subword_n_gram", "transformer"]:
-        print(f"Model name {model_name} not recognized")
-        return
+    # if model_name not in ["character_n_gram", "subword_n_gram", "transformer"]:
+    #     print(f"Model name {model_name} not recognized")
+    #     return
 
+    # comment = ""
+
+    # if pred is None:
+    #     wer_score = None
+    #     comment = "Error reading CSV!"
+
+    # else:
+    #     try:
+    #         pred = pred.set_index("id")
+    #         pred.columns = ["sentences"]
+
+    #         wer_score = wer.compute(
+    #             predictions=pred["sentences"].tolist(),
+    #             references=test_data["sentences"].tolist(),
+    #         )
+    #         wer_score = round(wer_score, 5)
+
+    #     except:
+    #         wer_score = None
+    #         comment = "Error computing correlation!"
+
+    # return [
+    #     {
+    #         # Required: name of leaderboard file.
+    #         "leaderboard": "leaderboard_hub",
+    #         "Score": wer_score,
+    #         "Method": model_name,
+    #         "Member": member,
+    #         "Comment": comment,
+    #     }
+    #     for member in repo["member"]
+    # ]
+
+    # Extract model name from file name
+    valid_models = {"character_n_gram", "subword_n_gram", "transformer"}
+    model_name = next((m for m in valid_models if file_name.startswith(m)), None)
+
+    # Default values
+    wer_score = None
     comment = ""
 
-    if pred is None:
-        wer_score = None
+    if model_name is None:
+        comment = f"Model name in file {file_name} not recognized"
+    elif pred is None:
         comment = "Error reading CSV!"
-
     else:
         try:
-            pred = pred.set_index("id")
-            pred.columns = ["sentences"]
+            # Ensure "id" column exists and identify the second column dynamically
+            if "id" not in pred.columns:
+                comment = "Error: Missing required 'id' column in predictions DataFrame"
+            else:
+                content_columns = [col for col in pred.columns if col != "id"]
 
-            wer_score = wer.compute(
-                predictions=pred["sentences"].tolist(),
-                references=test_data["sentences"].tolist(),
-            )
-            wer_score = round(wer_score, 5)
+                if len(content_columns) != 1:
+                    comment = "Error: Predictions DataFrame should have exactly one non-'id' column"
+                else:
+                    content_column = content_columns[0]
+                    wer_score = wer.compute(
+                        predictions=pred.set_index("id")[content_column].tolist(),
+                        references=test_data["sentences"].tolist(),
+                    )
+                    wer_score = round(wer_score, 5)
+        except Exception as e:
+            comment = f"Error computing WER score: {e}"
 
-        except:
-            wer_score = None
-            comment = "Error computing correlation!"
-
+    # Return structured leaderboard results
     return [
         {
-            # Required: name of leaderboard file.
             "leaderboard": "leaderboard_hub",
             "Score": wer_score,
             "Method": model_name,
             "Member": member,
             "Comment": comment,
         }
-        for member in repo["member"]
+        for member in repo.get("member", [])
     ]
 
 
