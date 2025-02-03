@@ -62,7 +62,7 @@ LEADERBOARD_REPO_NAME = "data-37712-win25-leaderboard"
 # Assignment directory in leaderboard repo.
 
 # LEADERBOARD_ASSIGNMENT_NAME = "a3"
-LEADERBOARD_ASSIGNMENT_NAME = "assignment-3"
+LEADERBOARD_ASSIGNMENT_NAME = "assignment-3-leaderboard"
 
 # GitHub Classroom prefix attached to every repo, used to find assigments.
 
