@@ -1,0 +1,32 @@
+dry_run: false
+
+github:
+  organization: "UChi-CI"
+  leaderboard_repo: "data-37712-win25-leaderboard"
+  assignment_prefix: "data-37712-win25-assignment-3-"
+  assignment_name: "assignment-3"
+
+test_data:
+  directory: "held-out-test-data"
+  assignment_test_data: "a3-test-data"
+
+utils_module: "assignment_3_utils"
+
+staff: []
+  # - toddnief
+  # - ari-holtzman
+
+# Note: This is a more general way of specifying the results files, clean this up and document this
+results_files:
+  - "bert_cont_test_words1_embeddings.txt"
+  - "bert_cont_test_words2_embeddings.txt"
+  - "bert_isol_test_words1_embeddings.txt"
+  - "bert_isol_test_words2_embeddings.txt"
+  - "gpt2_cont_test_words1_embeddings.txt"
+  - "gpt2_cont_test_words2_embeddings.txt"
+  - "gpt2_isol_test_words1_embeddings.txt"
+  - "gpt2_isol_test_words2_embeddings.txt"
+  - "word2vec_cont_test_words1_embeddings.txt"
+  - "word2vec_cont_test_words2_embeddings.txt"
+  - "word2vec_isol_test_words1_embeddings.txt"
+  - "word2vec_isol_test_words2_embeddings.txt"

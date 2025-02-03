@@ -30,45 +30,6 @@ def load_test_data(assignment_test_data_dir):
 
 
 def compute_scores(file_name, pred, repo, test_data):
-    # model_name = file_name.split("_test_wer_predictions.csv")[0]
-
-    # if model_name not in ["character_n_gram", "subword_n_gram", "transformer"]:
-    #     print(f"Model name {model_name} not recognized")
-    #     return
-
-    # comment = ""
-
-    # if pred is None:
-    #     wer_score = None
-    #     comment = "Error reading CSV!"
-
-    # else:
-    #     try:
-    #         pred = pred.set_index("id")
-    #         pred.columns = ["sentences"]
-
-    #         wer_score = wer.compute(
-    #             predictions=pred["sentences"].tolist(),
-    #             references=test_data["sentences"].tolist(),
-    #         )
-    #         wer_score = round(wer_score, 5)
-
-    #     except:
-    #         wer_score = None
-    #         comment = "Error computing correlation!"
-
-    # return [
-    #     {
-    #         # Required: name of leaderboard file.
-    #         "leaderboard": "leaderboard_hub",
-    #         "Score": wer_score,
-    #         "Method": model_name,
-    #         "Member": member,
-    #         "Comment": comment,
-    #     }
-    #     for member in repo["member"]
-    # ]
-
     # Extract model name from file name
     valid_models = {"character_n_gram", "subword_n_gram", "transformer"}
     model_name = next((m for m in valid_models if file_name.startswith(m)), None)
