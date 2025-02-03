@@ -1,75 +1,76 @@
 Score,Method,Member,Comment
--inf,character_n_gram,Angelneer926,Error reading CSV!
--inf,subword_n_gram,Angelneer926,Error reading CSV!
--inf,transformer,Angelneer926,Error reading CSV!
--inf,character_n_gram,Gentlemath,Error reading CSV!
--inf,subword_n_gram,Gentlemath,Error reading CSV!
--inf,transformer,Gentlemath,Error reading CSV!
--inf,character_n_gram,JingyangYi,Error reading CSV!
--inf,subword_n_gram,JingyangYi,Error reading CSV!
--inf,transformer,JingyangYi,Error reading CSV!
--inf,character_n_gram,PaulHong12,Error reading CSV!
--inf,subword_n_gram,PaulHong12,Error reading CSV!
--inf,transformer,PaulHong12,Error reading CSV!
--inf,subword_n_gram,VanTranHong,Error reading CSV!
--inf,transformer,VanTranHong,Error reading CSV!
--inf,character_n_gram,WeiyiTian,Error reading CSV!
--inf,subword_n_gram,WeiyiTian,Error reading CSV!
--inf,transformer,WeiyiTian,Error reading CSV!
--inf,character_n_gram,aashrivastava,Error reading CSV!
--inf,subword_n_gram,aashrivastava,Error reading CSV!
--inf,transformer,aashrivastava,Error reading CSV!
--inf,character_n_gram,adrian-mingxuancao,Error reading CSV!
--inf,subword_n_gram,adrian-mingxuancao,Error reading CSV!
--inf,transformer,adrian-mingxuancao,Error reading CSV!
--inf,character_n_gram,ari-holtzman,Error reading CSV!
--inf,subword_n_gram,ari-holtzman,Error reading CSV!
--inf,transformer,ari-holtzman,Error reading CSV!
--inf,character_n_gram,arjungecon,Error reading CSV!
--inf,subword_n_gram,arjungecon,Error reading CSV!
--inf,transformer,arjungecon,Error reading CSV!
--inf,character_n_gram,atticusginsborg,Error reading CSV!
--inf,subword_n_gram,atticusginsborg,Error reading CSV!
--inf,transformer,atticusginsborg,Error reading CSV!
--inf,character_n_gram,cassietang717,Error reading CSV!
--inf,subword_n_gram,cassietang717,Error reading CSV!
--inf,transformer,cassietang717,Error reading CSV!
--inf,character_n_gram,christymarc,Error reading CSV!
--inf,subword_n_gram,christymarc,Error reading CSV!
--inf,transformer,christymarc,Error reading CSV!
--inf,character_n_gram,dwlyu,Error reading CSV!
--inf,subword_n_gram,dwlyu,Error reading CSV!
--inf,transformer,dwlyu,Error reading CSV!
--inf,character_n_gram,echeloni11,Error reading CSV!
--inf,subword_n_gram,echeloni11,Error reading CSV!
--inf,transformer,echeloni11,Error reading CSV!
--inf,character_n_gram,ericdesoiza,Error reading CSV!
--inf,subword_n_gram,ericdesoiza,Error reading CSV!
--inf,transformer,ericdesoiza,Error reading CSV!
--inf,character_n_gram,javyduck,Error reading CSV!
--inf,subword_n_gram,javyduck,Error reading CSV!
--inf,transformer,javyduck,Error reading CSV!
--inf,character_n_gram,jiawei-zhang-a,Error reading CSV!
--inf,subword_n_gram,jiawei-zhang-a,Error reading CSV!
--inf,transformer,jiawei-zhang-a,Error reading CSV!
--inf,character_n_gram,jiazheng-wang-yes,Error reading CSV!
--inf,subword_n_gram,jiazheng-wang-yes,Error reading CSV!
--inf,transformer,jiazheng-wang-yes,Error reading CSV!
--inf,character_n_gram,jiheeyy,Error reading CSV!
--inf,subword_n_gram,jiheeyy,Error reading CSV!
--inf,transformer,jiheeyy,Error reading CSV!
--inf,character_n_gram,jinoh5,Error reading CSV!
--inf,subword_n_gram,jinoh5,Error reading CSV!
--inf,transformer,jinoh5,Error reading CSV!
--inf,character_n_gram,kehanzhao1,Error reading CSV!
--inf,subword_n_gram,kehanzhao1,Error reading CSV!
--inf,transformer,kehanzhao1,Error reading CSV!
--inf,character_n_gram,rachelngordon,Error reading CSV!
--inf,subword_n_gram,rachelngordon,Error reading CSV!
--inf,transformer,rachelngordon,Error reading CSV!
--inf,character_n_gram,sarsong,Error reading CSV!
--inf,subword_n_gram,sarsong,Error reading CSV!
--inf,transformer,sarsong,Error reading CSV!
--inf,character_n_gram,toddnief,Error reading CSV!
--inf,subword_n_gram,toddnief,Error reading CSV!
--inf,transformer,toddnief,Error reading CSV!
+0.10618,character_n_gram,Angelneer926,
+0.12934,subword_n_gram,Angelneer926,
+0.15444,transformer,Angelneer926,
+0.08494,character_n_gram,Gentlemath,
+0.09459,subword_n_gram,Gentlemath,
+0.09266,transformer,Gentlemath,
+0.08494,character_n_gram,JingyangYi,
+0.11004,subword_n_gram,JingyangYi,
+0.15444,transformer,JingyangYi,
+0.11583,character_n_gram,PaulHong12,
+0.13514,subword_n_gram,PaulHong12,
+0.15444,transformer,PaulHong12,
+0.12934,character_n_gram,VanTranHong,
+0.11583,subword_n_gram,VanTranHong,
+0.11969,transformer,VanTranHong,
+0.10618,character_n_gram,WeiyiTian,
+0.09846,subword_n_gram,WeiyiTian,
+0.15444,transformer,WeiyiTian,
+0.10425,character_n_gram,aashrivastava,
+0.09459,subword_n_gram,aashrivastava,
+0.10425,transformer,aashrivastava,
+0.11583,character_n_gram,adrian-mingxuancao,
+0.1139,subword_n_gram,adrian-mingxuancao,
+0.12548,transformer,adrian-mingxuancao,
+0.08494,character_n_gram,ari-holtzman,
+0.09266,subword_n_gram,ari-holtzman,
+0.09266,transformer,ari-holtzman,
+0.15444,character_n_gram,arjungecon,
+0.15444,subword_n_gram,arjungecon,
+0.15444,transformer,arjungecon,
+0.15444,character_n_gram,atticusginsborg,
+0.15444,subword_n_gram,atticusginsborg,
+0.15444,transformer,atticusginsborg,
+0.10425,character_n_gram,cassietang717,
+0.10232,subword_n_gram,cassietang717,
+0.15444,transformer,cassietang717,
+0.1332,character_n_gram,christymarc,
+0.10232,subword_n_gram,christymarc,
+0.15444,transformer,christymarc,
+0.10811,character_n_gram,dwlyu,
+0.09266,subword_n_gram,dwlyu,
+0.15444,transformer,dwlyu,
+0.10232,character_n_gram,echeloni11,
+0.11004,subword_n_gram,echeloni11,
+0.15444,transformer,echeloni11,
+0.1332,character_n_gram,ericdesoiza,
+0.12934,subword_n_gram,ericdesoiza,
+0.15444,transformer,ericdesoiza,
+0.15444,character_n_gram,javyduck,
+0.12934,subword_n_gram,javyduck,
+0.15444,transformer,javyduck,
+0.1332,character_n_gram,jiawei-zhang-a,
+0.12162,subword_n_gram,jiawei-zhang-a,
+0.11776,transformer,jiawei-zhang-a,
+0.13127,character_n_gram,jiazheng-wang-yes,
+0.12355,subword_n_gram,jiazheng-wang-yes,
+0.15444,transformer,jiazheng-wang-yes,
+0.15444,character_n_gram,jiheeyy,
+0.15444,subword_n_gram,jiheeyy,
+0.15444,transformer,jiheeyy,
+0.11969,character_n_gram,jinoh5,
+0.22587,subword_n_gram,jinoh5,
+0.15444,transformer,jinoh5,
+0.10811,character_n_gram,kehanzhao1,
+0.12355,subword_n_gram,kehanzhao1,
+0.15444,transformer,kehanzhao1,
+0.15444,character_n_gram,rachelngordon,
+0.15444,subword_n_gram,rachelngordon,
+0.15444,transformer,rachelngordon,
+0.11776,character_n_gram,sarsong,
+0.12548,subword_n_gram,sarsong,
+0.15444,transformer,sarsong,
+0.08494,character_n_gram,toddnief,
+0.09266,subword_n_gram,toddnief,
+0.09266,transformer,toddnief,
