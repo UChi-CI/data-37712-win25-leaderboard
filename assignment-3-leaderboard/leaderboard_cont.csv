@@ -1,4 +1,4 @@
 Score,Method,Member,Comment
--inf,bert,ari-holtzman toddnief,Error computing correlation!
--inf,gpt2,ari-holtzman toddnief,Error computing correlation!
--inf,word2vec,ari-holtzman toddnief,Error computing correlation!
+0.02931,gpt2,ari-holtzman toddnief,
+-0.00453,word2vec,ari-holtzman toddnief,
+-0.02733,bert,ari-holtzman toddnief,
