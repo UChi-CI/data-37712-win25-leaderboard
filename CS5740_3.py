@@ -45,6 +45,7 @@ CLASS = "UChi-CI"
 # Exclude these people from collaborator list.
 
 STAFF = {
+    "ari-holtzman",
     "yoavartzi",
     "momergul",
     "annshin",
@@ -229,6 +230,18 @@ leaderboard_repo = org.get_repo(LEADERBOARD_REPO_NAME)
 ################################################################################
 
 print("Loading Repos...")
+
+# repos = [
+#     {
+#         "git": repo,
+#         "name": repo.name,
+#         "member": sorted(
+#             [c.login for c in repo.get_collaborators() if c.login not in STAFF]
+#         ),
+#     }
+#     for repo in org.get_repos()
+#     if repo.name.startswith(REPO_ASSIGNMENT_PREFIX)
+# ]
 
 repos = [
     {
