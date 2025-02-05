@@ -7,6 +7,7 @@ Score,Method,Member,Comment
 0.09266,transformer,Gentlemath,
 0.08494,character_n_gram,JingyangYi,
 0.11004,subword_n_gram,JingyangYi,
+0.15444,transformer,JingyangYi,
 0.11583,character_n_gram,PaulHong12,
 0.13514,subword_n_gram,PaulHong12,
 0.15444,transformer,PaulHong12,
@@ -22,9 +23,9 @@ Score,Method,Member,Comment
 0.11583,character_n_gram,adrian-mingxuancao,
 0.1139,subword_n_gram,adrian-mingxuancao,
 0.12548,transformer,adrian-mingxuancao,
--inf,character_n_gram,ari-holtzman,Error: Missing required 'id' column in predictions DataFrame
--inf,subword_n_gram,ari-holtzman,Error: Missing required 'id' column in predictions DataFrame
--inf,transformer,ari-holtzman,Error: Missing required 'id' column in predictions DataFrame
+0.08494,character_n_gram,ari-holtzman,
+0.09266,subword_n_gram,ari-holtzman,
+0.09266,transformer,ari-holtzman,
 0.15444,character_n_gram,arjungecon,
 0.15444,subword_n_gram,arjungecon,
 0.15444,transformer,arjungecon,
@@ -33,22 +34,22 @@ Score,Method,Member,Comment
 0.15444,transformer,atticusginsborg,
 0.10425,character_n_gram,cassietang717,
 0.10232,subword_n_gram,cassietang717,
-0.15444,transformer,cassietang717,
+0.12162,transformer,cassietang717,
 0.10039,character_n_gram,christymarc,
 0.10232,subword_n_gram,christymarc,
-0.15444,transformer,christymarc,
+0.12355,transformer,christymarc,
 0.10811,character_n_gram,dwlyu,
 0.09266,subword_n_gram,dwlyu,
-0.1332,transformer,dwlyu,
+0.11583,transformer,dwlyu,
 0.10232,character_n_gram,echeloni11,
 0.11004,subword_n_gram,echeloni11,
 0.09846,transformer,echeloni11,
 0.1332,character_n_gram,ericdesoiza,
 0.12934,subword_n_gram,ericdesoiza,
 0.15444,transformer,ericdesoiza,
--inf,character_n_gram,javyduck,Error: Missing required 'id' column in predictions DataFrame
--inf,subword_n_gram,javyduck,Error: Missing required 'id' column in predictions DataFrame
--inf,transformer,javyduck,Error: Missing required 'id' column in predictions DataFrame
+0.15637,character_n_gram,javyduck,
+0.15637,subword_n_gram,javyduck,
+0.14672,transformer,javyduck,
 0.1332,character_n_gram,jiawei-zhang-a,
 0.12162,subword_n_gram,jiawei-zhang-a,
 0.11776,transformer,jiawei-zhang-a,
@@ -63,13 +64,13 @@ Score,Method,Member,Comment
 0.15444,transformer,jinoh5,
 0.10811,character_n_gram,kehanzhao1,
 0.12355,subword_n_gram,kehanzhao1,
-0.15444,transformer,kehanzhao1,
+0.09653,transformer,kehanzhao1,
 0.15444,character_n_gram,rachelngordon,
 0.15444,subword_n_gram,rachelngordon,
 0.15444,transformer,rachelngordon,
 0.11776,character_n_gram,sarsong,
 0.12548,subword_n_gram,sarsong,
 0.12548,transformer,sarsong,
--inf,character_n_gram,toddnief,Error: Missing required 'id' column in predictions DataFrame
--inf,subword_n_gram,toddnief,Error: Missing required 'id' column in predictions DataFrame
--inf,transformer,toddnief,Error: Missing required 'id' column in predictions DataFrame
+0.08494,character_n_gram,toddnief,
+0.09266,subword_n_gram,toddnief,
+0.09266,transformer,toddnief,
