@@ -16,7 +16,7 @@ Score,Method,Member,Comment
 0.11969,transformer,VanTranHong,
 0.10618,character_n_gram,WeiyiTian,
 0.09846,subword_n_gram,WeiyiTian,
-0.15444,transformer,WeiyiTian,
+0.10618,transformer,WeiyiTian,
 0.10425,character_n_gram,aashrivastava,
 0.09459,subword_n_gram,aashrivastava,
 0.10425,transformer,aashrivastava,
