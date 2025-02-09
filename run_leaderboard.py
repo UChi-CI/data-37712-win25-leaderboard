@@ -134,45 +134,13 @@ def main(config_path="config.yaml"):
             leaderboards.append([error_entry])
             continue
 
-        # TODO: Fix this...
-        repo["results"] = {
-            "word2vec": {},
-            "bert": {},
-            "gpt2": {},
-        }
-
         # Find results and compute scores
         for file_name, path in repo["files"].items():
             content_encoded = repo["git"].get_git_blob(path.sha).content
             content = base64.b64decode(content_encoded).decode("utf-8")
+            data = pd.read_csv(StringIO(content))
+            repo["results"][file_name] = data
 
-            # TODO: This is the general way to do this, fix this for assignment #3 and then go back for other assignments
-            # data = pd.read_csv(StringIO(content))
-            # repo["results"][file_name] = data
-
-            def read_embedding(rows):
-                embeddings = []
-                for i, row in enumerate(rows):
-                    word, *vector = row.split()
-                    embeddings.append((word, [float(x) for x in vector]))
-                    dim = len(vector)
-                return embeddings, dim
-
-            try:
-                embedding_list = [line for line in content.split("\n") if line != ""]
-                data, dim = read_embedding(embedding_list)
-            except:
-                print("Except", file_name)
-                data = None
-            # TODO: Wait, do we need to do this?
-            if "word2vec" in file_name:
-                repo["results"]["word2vec"][file_name] = data
-            elif "bert" in file_name:
-                repo["results"]["bert"][file_name] = data
-            elif "gpt2" in file_name:
-                repo["results"]["gpt2"][file_name] = data
-
-            # TODO: Maybe we need to split the scores here? We should be able to return them so we don't need to though...
             score = compute_scores(file_name, data, repo, test_data)
             if score:
                 leaderboards.append(score)

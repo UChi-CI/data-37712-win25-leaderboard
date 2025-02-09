@@ -11,4 +11,4 @@ else
     exit 1
 fi
 
-exec $CONDA_EXEC run -n $CONDA_ENV python "$SCRIPT_DIR/run_leaderboard.py" --config "$SCRIPT_DIR/$CONFIG_FILE"
+exec $CONDA_EXEC run -n $CONDA_ENV python "$SCRIPT_DIR/$LEADERBOARD_SCRIPT" --config "$SCRIPT_DIR/$CONFIG_FILE"
