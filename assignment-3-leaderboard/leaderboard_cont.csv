@@ -15,6 +15,7 @@ Score,Method,Member,Comment
 0.02931,gpt2,christymarc,
 0.02931,gpt2,cassietang717,
 0.02931,gpt2,aashrivastava,
+0.02931,gpt2,WeiyiTian,
 0.02931,gpt2,VanTranHong,
 0.02931,gpt2,Angelneer926,
 -0.00453,word2vec,sarsong,
@@ -47,4 +48,3 @@ Score,Method,Member,Comment
 ,gpt2,jinoh5,Error computing correlation!
 ,bert,echeloni11,Error computing correlation!
 ,gpt2,echeloni11,Error computing correlation!
-,gpt2,WeiyiTian,Error computing correlation!
