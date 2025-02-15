@@ -8,6 +8,7 @@ import argparse
 import base64
 import os
 from io import StringIO
+from pathlib import Path
 from sys import argv
 
 import numpy as np
@@ -35,13 +36,6 @@ CLASS = "UChi-CI"
 STAFF = {
     "ari-holtzman",
     "toddnief",
-    "yoavartzi",
-    "momergul",
-    "annshin",
-    "Vrownie",
-    "sy464",
-    "YiChen8185",
-    "kanlanc",
 }
 
 # Name of the leaderboard repo.
@@ -95,13 +89,13 @@ def read_embedding(rows):
     return embeddings, dim
 
 
+TEST_DATA_DIR = Path(__file__).parent / "held-out-test-data" / "a3-test-data"
+
+
 def main(config):
-    isol_test = pd.read_csv(
-        "held-out-test-data/a3-test-data/isolated_test_y.csv", index_col="id"
-    )
-    cont_test = pd.read_csv(
-        "held-out-test-data/a3-test-data/contextual_test_y.csv", index_col="id"
-    )
+    isol_test = pd.read_csv(TEST_DATA_DIR / "isolated_test_y.csv", index_col="id")
+    cont_test = pd.read_csv(TEST_DATA_DIR / "contextual_test_y.csv", index_col="id")
+
     isol_test.columns = ["actual"]
     cont_test.columns = ["actual"]
 
