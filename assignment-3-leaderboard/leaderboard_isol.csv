@@ -7,11 +7,9 @@ Score,Method,Member,Comment
 0.22968,gpt2,WeiyiTian,
 0.22967,gpt2,cassietang717,
 0.22967,gpt2,Angelneer926,
-0.175,bert,Gentlemath,
 0.16546,gpt2,jiheeyy,
 0.16546,gpt2,PaulHong12,
 0.15615,bert,VanTranHong,
-0.148,gpt2,Gentlemath,
 0.12485,bert,adrian-mingxuancao,
 0.06239,bert,Angelneer926,
 0.05715,bert,PaulHong12,
@@ -48,3 +46,5 @@ Score,Method,Member,Comment
 ,gpt2,echeloni11,Error computing correlation!
 ,bert,christymarc,Error computing correlation!
 ,gpt2,christymarc,Error computing correlation!
+,bert,Gentlemath,Error computing correlation!
+,gpt2,Gentlemath,Error computing correlation!
