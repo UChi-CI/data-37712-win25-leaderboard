@@ -1,12 +1,9 @@
 """Note: This is a mess since I didn't take the time to extract a generalizable way of doing this from the chaos"""
 
-################################################################################
-# Imports.
-################################################################################
-
 import argparse
 import base64
 import os
+from datetime import datetime
 from io import StringIO
 from pathlib import Path
 from sys import argv
@@ -160,13 +157,15 @@ def main(config):
                                 score = score.round(5)
                             scores[task] = score
                         except:
-                            comments[task] = "Error computing correlation!"
+                            comments[task] = (
+                                "Error computing correlation: general error catch"
+                            )
                 except:
                     continue
         # This is a general error catch, to avoid edge cases (e.g. where people used lfs => will get a None score)
         for _task in ["cont", "isol"]:
             if scores[_task] == None:
-                comments[_task] = "Error computing correlation!"
+                comments[_task] = "Error computing correlation: score is none"
         print("scores and comments", scores, comments)
         return {
             # Required: name of leaderboard file.
@@ -187,13 +186,15 @@ def main(config):
         if len(leaderboards) == 0:
             return leaderboards
 
-        return leaderboards.sort_values(
-            [
-                "Score",
-                "Member",
-            ],
-            ascending=False,
-        )
+        return leaderboards.sort_values(by=["Member"])
+
+        # return leaderboards.sort_values(
+        #     [
+        #         "Score",
+        #         "Member",
+        #     ],
+        #     ascending=False,
+        # )
 
     ################################################################################
     # API authentication, find organization and leaderboard repo.
@@ -379,6 +380,7 @@ def main(config):
 
 
 if __name__ == "__main__":
+    print(f"Starting leaderboard update at {datetime.now()}")
     parser = argparse.ArgumentParser(description="Run leaderboard update")
     parser.add_argument(
         "--config",
