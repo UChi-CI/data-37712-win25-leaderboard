@@ -34,8 +34,8 @@ Score,Method,Member,Comment
 0.02895,gpt2,ericdesoiza,
 -0.07549,word2vec,ericdesoiza,
 -0.04385,bert,ericdesoiza,
-0.02895,gpt2,jiawei-zhang-a,
--0.04385,bert,jiawei-zhang-a,
+,gpt2,jiawei-zhang-a,Error computing correlation: score is none
+,bert,jiawei-zhang-a,Error computing correlation: score is none
 -0.07549,word2vec,jiawei-zhang-a,
 -0.07549,word2vec,jiheeyy,
 0.05463,bert,jiheeyy,
