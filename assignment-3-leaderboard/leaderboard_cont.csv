@@ -23,28 +23,29 @@ Score,Method,Member,Comment
 -0.00453,word2vec,adrian-mingxuancao,
 0.47819,bert,adrian-mingxuancao,
 0.07735,gpt2,adrian-mingxuancao,
+-0.02733,bert,cassietang717,
 0.02931,gpt2,cassietang717,
 -0.00453,word2vec,cassietang717,
--0.02733,bert,cassietang717,
-,gpt2,christymarc,
-,word2vec,christymarc,
-,bert,christymarc,
+,word2vec,christymarc,Error computing correlation: score is none
+,bert,christymarc,Error computing correlation: score is none
+,gpt2,christymarc,Error computing correlation: score is none
 0.24808,gpt2,dwlyu,
 -0.00453,word2vec,dwlyu,
 0.53056,bert,dwlyu,
-,gpt2,echeloni11,Error reading result embeddings!
-,bert,echeloni11,Error reading result embeddings!
+,gpt2,echeloni11,Error computing correlation: score is none
+,bert,echeloni11,Error computing correlation: score is none
 0.02931,gpt2,ericdesoiza,
--0.02733,bert,ericdesoiza,
 -0.00453,word2vec,ericdesoiza,
+-0.02733,bert,ericdesoiza,
 0.02931,gpt2,jiawei-zhang-a,
 -0.02733,bert,jiawei-zhang-a,
 -0.00453,word2vec,jiawei-zhang-a,
 -0.00453,word2vec,jiheeyy,
 0.02931,gpt2,jiheeyy,
 -0.02733,bert,jiheeyy,
-,bert,jinoh5,Error reading result embeddings!
-,gpt2,jinoh5,Error reading result embeddings!
+-0.02733,bert,jinoh5,
+0.02931,gpt2,jinoh5,
+-0.00453,word2vec,jinoh5,
 0.02931,gpt2,kehanzhao1,
 -0.02733,bert,kehanzhao1,
 -0.00453,word2vec,kehanzhao1,
