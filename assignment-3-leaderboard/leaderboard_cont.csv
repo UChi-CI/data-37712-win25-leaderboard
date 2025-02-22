@@ -4,12 +4,12 @@ Score,Method,Member,Comment
 0.02931,gpt2,Angelneer926,
 0.25123,gpt2,Gentlemath,
 0.63451,bert,Gentlemath,
--0.00453,word2vec,Gentlemath,
+-0.05198,word2vec,Gentlemath,
 -0.00453,word2vec,JingyangYi,
 0.02931,gpt2,JingyangYi,
 -0.02733,bert,JingyangYi,
-0.08227,bert,PaulHong12,
-0.16123,gpt2,PaulHong12,
+0.22256,bert,PaulHong12,
+0.01922,gpt2,PaulHong12,
 -0.00453,word2vec,PaulHong12,
 -0.02733,bert,VanTranHong,
 0.02931,gpt2,VanTranHong,
@@ -20,7 +20,7 @@ Score,Method,Member,Comment
 -0.00453,word2vec,aashrivastava,
 0.02931,gpt2,aashrivastava,
 -0.02733,bert,aashrivastava,
-,bert,adrian-mingxuancao,Error computing correlation: score is none
+0.47819,bert,adrian-mingxuancao,
 0.05906,gpt2,adrian-mingxuancao,
 0.09737,word2vec,adrian-mingxuancao,
 -0.02733,bert,cassietang717,
@@ -29,7 +29,7 @@ Score,Method,Member,Comment
 ,gpt2,christymarc,Error computing correlation: score is none
 ,word2vec,christymarc,Error computing correlation: score is none
 ,bert,christymarc,Error computing correlation: score is none
--0.00453,word2vec,dwlyu,
+0.31964,word2vec,dwlyu,
 0.53056,bert,dwlyu,
 0.24808,gpt2,dwlyu,
 ,gpt2,echeloni11,Error computing correlation: score is none
@@ -56,9 +56,9 @@ Score,Method,Member,Comment
 -0.02733,bert,kehanzhao1,
 -0.00453,word2vec,kehanzhao1,
 0.02931,gpt2,kehanzhao1,
--0.02733,bert,listar2000,
+,bert,listar2000,Error computing correlation: score is none
 -0.00453,word2vec,listar2000,
-0.02931,gpt2,listar2000,
+,gpt2,listar2000,Error computing correlation: score is none
 -0.02733,bert,sarsong,
 -0.00453,word2vec,sarsong,
 0.02931,gpt2,sarsong,
