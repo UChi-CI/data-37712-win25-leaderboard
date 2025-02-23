@@ -15,7 +15,7 @@ Score,Method,Member,Comment
 0.15615,bert,VanTranHong,
 -0.03796,gpt2,VanTranHong,
 0.35486,bert,WeiyiTian,
-0.17708,word2vec,WeiyiTian,
+0.21476,word2vec,WeiyiTian,
 0.22968,gpt2,WeiyiTian,
 -0.07549,word2vec,aashrivastava,
 0.22967,gpt2,aashrivastava,
