@@ -9,8 +9,8 @@ Score,Method,Member,Comment
 -0.07549,word2vec,JingyangYi,
 0.30672,bert,JingyangYi,
 0.26947,bert,PaulHong12,
-,gpt2,PaulHong12,Error computing correlation: score is none
-,word2vec,PaulHong12,Error computing correlation: score is none
+0.16546,gpt2,PaulHong12,
+-0.07549,word2vec,PaulHong12,
 -0.07549,word2vec,VanTranHong,
 0.15615,bert,VanTranHong,
 -0.03796,gpt2,VanTranHong,
